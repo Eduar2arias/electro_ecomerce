@@ -1,0 +1,85 @@
+/* Fondo general centrado */
+.auth-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 100vh; */
+    background-color: #f0f2f5;
+  }
+  
+  /* Card del formulario */
+  .auth-card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Título del formulario */
+  .auth-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 24px;
+    color: #333;
+  }
+  
+  /* Estilos del formulario */
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .auth-input {
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.2s;
+  }
+  
+  .auth-input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Botón */
+  .auth-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .auth-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Cambio de modo */
+  .auth-toggle {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .auth-link {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 0;
+  }
+  
+  .auth-link:hover {
+    color: #0056b3;
+  }
+  
