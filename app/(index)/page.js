@@ -2,14 +2,15 @@
 import Image from "next/image";
 import './page.css';
 import { useEffect, useState } from "react";
+import Card from "../components/Card/card";
 
 const products = {
   calulares: [
-    { id: 'p1', name: 'samsung', price: 100 ,img: 'sdfs'},
-    { id: 'p2', name: 'xiaomi', price: 200 },
-    { id: 'p3', name: 'iphone', price: 300 },
-    { id: 'p4', name: 'huawei', price: 400 },
-    { id: 'p5', name: 'motorola', price: 500 }
+    { id: 'p1', name: 'samsung', price: 100 , img: 'https://megacomputer.com.co/wp-content/uploads/2024/10/1-28.webp' },
+    { id: 'p2', name: 'xiaomi', price: 200 ,  img: 'https://megacomputer.com.co/wp-content/uploads/2024/10/1-28.webp'},
+    { id: 'p3', name: 'iphone', price: 300 , img: 'https://megacomputer.com.co/wp-content/uploads/2024/10/1-28.webp'},
+    { id: 'p4', name: 'huawei', price: 400 , img: 'https://megacomputer.com.co/wp-content/uploads/2024/10/1-28.webp'},
+    { id: 'p5', name: 'motorola', price: 500 , img: 'https://megacomputer.com.co/wp-content/uploads/2024/10/1-28.webp'}
   ],
   computadores: [
     { id: 'p6', name: 'samsung', price: 100 },
@@ -46,18 +47,10 @@ export default function Home() {
       </div>
       <div>
         <div style={{ 'display': 'flex', 'flexDirection': 'row', 'justifyContent': 'space-around', 'alignItems': 'center', 'flexWrap': 'wrap' }}>
-        {productos && productos.map((producto) => (
-        <div className="contianer-card" style={{'width':'300px', 'height':'300px','border':'1px solid black'}}>
-          <div className="container-img">
-            <img alt="imagen" style={{'width':'200px', 'height':'200px'}} />
-          </div>
-          <div className="container-text">
-            <p>titulo: {producto.name}</p>
-            <p>precio: {producto.price}</p>
-          </div>
-        </div>
+          {productos && productos.map((producto) => (
+            <Card key={producto.id} producto={producto} />
 
-        ))}
+          ))}
 
         </div>
       </div>
