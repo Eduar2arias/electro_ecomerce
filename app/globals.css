@@ -1,42 +1,78 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ===== RESET BÁSICO ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Usa tu fuente preferida */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+/* ===== ESTILOS BASE ===== */
+body {
+  background-color: #f8f9fa; /* Fondo claro por defecto */
+  color: #212529; /* Color de texto principal */
+}
+
+img,
+video,
+canvas {
+  max-width: 100%;
+  height: auto;
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+  color: inherit;
 }
 
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* ===== TIPOGRAFÍA CONSISTENTE ===== */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* ===== UTILIDADES ===== */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+:root {
+  --primary-color: #61dafb;
+  --max-width: 1200px;
+}
+
+/* ===== MEDIA QUERIES (Responsive) ===== */
 @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+  body {
+    background-color: #121212;
+    color: #f8f9fa;
   }
 }
+

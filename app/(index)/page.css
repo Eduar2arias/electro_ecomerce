@@ -1,0 +1,17 @@
+.container-page{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+
+.container-categorias{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 1rem;
+    
+}
+
+.btn-categoria {
+    margin: 1rem
+}
