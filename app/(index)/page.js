@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 const products = {
   calulares: [
-    { id: 'p1', name: 'samsung', price: 100 },
+    { id: 'p1', name: 'samsung', price: 100 ,img: 'sdfs'},
     { id: 'p2', name: 'xiaomi', price: 200 },
     { id: 'p3', name: 'iphone', price: 300 },
     { id: 'p4', name: 'huawei', price: 400 },
@@ -45,10 +45,20 @@ export default function Home() {
         {categorias.map((categoria) => <button key={categoria.id} className="btn-categoria">{categoria.name.toUpperCase()}</button>)}
       </div>
       <div>
-        <div className="contianer-card" style={{'width':''}}>
+        <div style={{ 'display': 'flex', 'flexDirection': 'row', 'justifyContent': 'space-around', 'alignItems': 'center', 'flexWrap': 'wrap' }}>
+        {productos && productos.map((producto) => (
+        <div className="contianer-card" style={{'width':'300px', 'height':'300px','border':'1px solid black'}}>
           <div className="container-img">
-            <img alt="imagen"  />
+            <img alt="imagen" style={{'width':'200px', 'height':'200px'}} />
           </div>
+          <div className="container-text">
+            <p>titulo: {producto.name}</p>
+            <p>precio: {producto.price}</p>
+          </div>
+        </div>
+
+        ))}
+
         </div>
       </div>
     </div>
