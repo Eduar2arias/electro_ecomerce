@@ -1,0 +1,63 @@
+/* justi content : espacio entre los elementos */
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+  }
+  
+  .header-logo {
+    display: flex;  
+  }
+  .logo { 
+    width: 100px;
+    padding: 1rem;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  
+  .header-text{
+    padding: 1rem; 
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  .log {
+    width: 80px
+  }
+  
+.header-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+
+
+  .container-sesion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  .container-sesion > button{
+    font-size: 1.2rem;
+    padding: 1rem;
+    height: inherit;
+    border-radius: 16px;
+    border: solid 1px black;
+  }
+
+  .btn-1{
+    color: black;
+    background-color: gray;
+    opacity: 0.5;
+    margin-right: 1rem;
+  }
+
+
+  .btn-2{
+    color: white;
+    background-color: black;
+  }

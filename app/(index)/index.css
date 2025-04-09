@@ -21,7 +21,7 @@
 }
 
 /* Estilos solo para elementos dentro de App */
-/* justi content : espacio entre los elementos */
+/* justi content : espacio entre los elementos
 .header {
   color: var(--primary-color);
   display: flex;
@@ -52,7 +52,7 @@
 .container-sesion > button{
   padding: 1em;
   height: inherit;
-}
+} */
 
 /* #root {
   max-width: 1280px;

@@ -1,14 +1,16 @@
 // import localFont from "next/font/local";
 import "./index.css";
 import "../globals.css";
-
+import Header from "../components/Header/header";
+import Footer from "../components/Footer/footer";
 
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="app-container">
-        <header className="header">
+        <Header />
+        {/* <header className="header">
           <section className="header-logo">
             <div className="logo">
               <img alt="logo" />
@@ -23,15 +25,15 @@ export default function RootLayout({ children }) {
               <button>registro</button>
             </div>
           </section>
-        </header>
+        </header> */}
         <main className="app-content">
           {children}
 
         </main>
-        <footer className="app-footer">
+        {/* <footer className="app-footer">
           foot
-        </footer>
-
+        </footer> */}
+        <Footer/>
       </body>
     </html>
   );
