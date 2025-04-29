@@ -1,4 +1,4 @@
-'use client'
+
 import DetalleId from './[id]/page'
 import './detalle.css'
 export default function Detalle() {
