@@ -146,7 +146,7 @@ export const productos = {
 
 export  const usuarios = {
   "eduar2_arias@hotmail.com" : {
-    password : '123456',
+    password : '1111',
     nameUser: 'Eduar Arias',
     email: "eduar2_arias@hotmail.com"
   }

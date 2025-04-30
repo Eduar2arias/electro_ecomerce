@@ -39,3 +39,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ////
 para inicar la app , en la terminal  =   npm run dev
+
+
+## usuario registrado por defecto 
+
+    email : eduar2_arias@hotmail.com
+    password : 1111,
+
+## link del despliegue
+
+https://electro-ecomerce.vercel.app/ 

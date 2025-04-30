@@ -49,19 +49,19 @@ export default function Home() {
     if (isLogin) {
       console.log(usuarios[formData.email]);
       if (!usuarios[formData.email]) {
-        console.log("Usuario no encontrado");
+
         alert("Usuario no encontrado");
         return;
       }
       if (usuarios[formData.email].password !== formData.password) {
-        console.log("Contraseña incorrecta");
+
         alert("Contraseña incorrecta");
         return;
       }
-      router.push("/")
       localStorage.setItem("user", JSON.stringify(usuarios[formData.email].nameUser))
       localStorage.setItem("session", JSON.stringify(true))
-      console.log("Iniciando sesión con:", formData.email, formData.password);
+      router.push("/")
+
     } else {
       if (usuarios[formData.email]) {
         console.log("El usuario ya existe");
@@ -75,11 +75,13 @@ export default function Home() {
       }
       setUsuarios({...usuarios, newUser})
       users[formData.email] = newUser
-      console.log(users);
+
       allUsuarios[formData.email] = newUser
-      console.log(allUsuarios);
+
       setUsuarios({...allUsuarios, newUser})
       localStorage.setItem("usuarios", JSON.stringify(allUsuarios))
+      localStorage.setItem("user", JSON.stringify(usuarios[formData.email].nameUser))
+      localStorage.setItem("session", JSON.stringify(true))
       router.push("/")
     }
   };
