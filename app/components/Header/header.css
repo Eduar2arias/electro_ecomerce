@@ -41,6 +41,13 @@
     align-items: center;
     height: auto;
   }
+  .container-sesion > * {
+    font-size: 1rem;
+    padding: 0.5rem;
+    height: inherit;
+    border-radius: 16px;
+    
+  }
   .container-sesion > button{
     font-size: 1rem;
     padding: 0.5rem;
@@ -49,6 +56,9 @@
     border: solid 1px black;
   }
 
+  .sesion{
+    margin-right: 2rem;
+  }
   .btn-1{
     color: black;
     background-color: gray;

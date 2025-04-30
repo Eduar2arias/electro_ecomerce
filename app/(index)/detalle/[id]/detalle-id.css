@@ -26,11 +26,11 @@
     color: #1f2937;
   }
   
-  .card-detalle p {
+  /* .card-detalle p {
     margin-top: 0.5rem;
     color: #6b7280;
     text-align: center;
-  }
+  } */
   
   .card-detalle .precio {
     margin-top: 1rem;
@@ -54,3 +54,9 @@
     background-color: #1e40af;
   }
   
+  .card-description{
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #374151;
+    text-align: justify;
+  }

@@ -15,7 +15,7 @@ export default function Card({ producto }) {
       <img src={img} alt={name} className="card-image" />
       <div className="card-content">
         <h2 className="card-title">{name}</h2>
-        <p className="card-description">Precio : {price}</p>
+        <p className="card-description">Precio : ${price}</p>
         {/* <button className="card-button">{buttonText}</button> */}
         <Link href="/detalle">detalle</Link>
       </div>
